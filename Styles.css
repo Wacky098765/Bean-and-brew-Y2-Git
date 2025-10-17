@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+body {
+    background-image: url("Photos/coffee-beans.jpg");
+}
+
+
+
+.text-carpet {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px; 
+  margin: 30px auto;
+}
+
+.h1_style {
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.p_style {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #122;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo-link {
+    flex-shrink: 0;  /* Prevent logo from shrinking */
+}
+
+.navbar ul {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* center links */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+      
+.navbar ul li a {
+  padding: 10;
+  height: 100%; 
+  line-height: 80px;
+}
+    
+      
+.navbar ul li a:hover {
+  background-color: #0458ff9f;
+}
+      
+      
+main {
+  margin-top: 60px;
+  padding: 10px;
+  text-align: center;
+}
+      
+.button{
+  background-color: #122;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+}
+      
+      
+.button:active{
+  background-color:aliceblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+.img1 {
+        width: 600px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+}
+
+.img2{
+        width: 120px;
+        height: auto;
+        display: inside;
+        margin: 20px auto;
+        padding: 15px;
+}
+.img3{
+            width: 150px;
+            height: auto;
+            display: inside;
+            margin: 20px auto;
+            padding: 10px;
+}
+.img4{
+  width: 350px;
+  height: 250px ;
+  display: inside;
+  margin: 20px auto;
+  padding: 25px;
+}
+
+
+.image-link {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-text {
+  display: none;
+  position: absolute;
+  bottom: 10px;  
+  left: 10px;    
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);  
+  padding: 5px;
+  font-size: 16px;
+}
+
+.image-link:hover .hover-text {
+  display: block; 
+}
+
+.events-link {
+  text-decoration: none; 
+}
+
+.events-button {
+  position: relative;
+  padding: 15px 30px;
+  background-color: #122;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  border-radius: 5px; 
+  overflow: hidden; 
+  transition: background-color 0.3s ease;
+}
+
+.events-button:hover {
+  background-color: #0458ff9f; 
+}
+
+.events-button:active{
+  background-color:aliceblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.events-button i {
+  margin-right: 10px; 
+}
+
+
+.balloon {
+  position: absolute;
+  font-size: 18px;
+  opacity: 0; 
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.balloon1 {
+  top: 60%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.balloon2 {
+  top: 70%;
+  left: 40%;
+  animation-delay: 0.2s;
+}
+
+.balloon3 {
+  top: 75%;
+  left: 60%;
+  animation-delay: 0.4s;
+}
+
+.balloon4 {
+  top: 55%;
+  left: 30%;
+  animation-delay: 0.6s;
+}
+
+.balloon5 {
+  top: 65%;
+  left: 50%;
+  animation-delay: 0.8s;
+}
+
+.balloon6 {
+  top: 80%;
+  left: 70%;
+  animation-delay: 1s;
+}
+
+.phone1 {
+  top: 79%;
+  left: 77%;
+  animation-delay: 0.8s;
+}
+
+.phone2 {
+  top: 79%;
+  left: 6%;
+  animation-delay: 0.6s;
+}
+
+.menu1 {
+  top:79%;
+  left: 10;
+}
+
+.events-button:hover .balloon {
+  opacity: 1; 
+  transform: translateY(-30px); 
+}
+
+
+@keyframes balloonAnimation {
+  0% {
+      opacity: 0;
+      transform: translateY(0);
+  }
+  50% {
+      opacity: 1;
+      transform: translateY(-30px); 
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-60px); 
+  }
+}
+
+
+.image-link {
+  position: relative;
+  display: inline-block;
+}
+
+
+.hover-text {
+  display: none;
+  position: absolute;
+  bottom: 10px;  
+  left: 10px;    
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);  
+  padding: 5px;
+  font-size: 16px;
+}
+
+
+
+.navbar-logo {
+  height: 70px;   
+  width: 70px;    
+}
+
+
+
+.menu-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu-images img {
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+
+.event-list {
+  max-width: 700px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.event-list h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.event {
+  background: rgba(18, 34, 34, 0.8);
+  margin-bottom: 25px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.event h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.date {
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 12px;
+  color: #a0c8ff;
+}
+
+footer {
+  background-color: #122;
+  margin: 0;
+  padding: 20px 0;
+  color: white;
+}
+
+.menu-box {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.menu-box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('Photos/Chai Cloud.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.menu-box:hover::before {
+  transform: scale(1.1);
+  filter: blur(4px) brightness(1.1);
+}
+
+
+
+.menu-box:hover {
+  transform: scale(1.05);
+}
+
+
+
+.drink-bg::before {
+  background-image: url('Photos/Chai Cloud.jpg');
+}
+
+.food-bg::before {
+  background-image: url('Photos/Croissants.webp');
+}
+
+.menu-box:hover {
+  transform: scale(1.05);
+}
+
+.menu-box::before {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.menu-box:hover::before {
+  transform: scale(1.1);
+  filter: blur(4px) brightness(1.1);
+}
+
+
+.menu-container {
+  display: flex;
+  justify-content: center;     
+  align-items: center;         
+  gap: 20px;                   
+  flex-wrap: nowrap;          
+  margin-top: 20px;
+}
+
+
+@media (max-width: 500px) {
+  .menu-container {
+    flex-wrap: wrap;
+  }
+
+  .menu-box {
+    width: 90%; 
+  }
+}
+
+
+.menu-box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+
+.back-button {
+    background-color: #6b4f4f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    float: left;
+}
+
+
+.back-button:hover {
+    background-color: #0458ff9f;
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.back-button {
+    position: absolute; 
+    left: 20px;
+    top: 12px;       
+    background-color: #122;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    float: none;       
+}
